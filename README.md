@@ -66,19 +66,19 @@ Missing details in lost or damaged reports trigger follow-up prompts.
 ## Screenshots / Examples
 
 Initial Chat
-(src/readme_img/initialChat.png)
+!(src/readme_img/initialChat.png)
 
 Tracking a Package
-(src/readme_img/trackingPackage.png)
+!(src/readme_img/trackingPackage.png)
 
 Reporting a Lost Package
-(src/readme_img/lostPackage.png)
+!(src/readme_img/lostPackage.png)
 
 Reporting a Damaged Package
-(src/readme_img/damagedPackage.png)
+!(src/readme_img/damagedPackage.png)
 
 Confirmation and Exit
-(src/readme_img/confirmationExit.png)
+!(src/readme_img/confirmationExit.png)
 
 
 ---
