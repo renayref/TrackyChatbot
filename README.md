@@ -9,7 +9,7 @@ This project is a demonstration of creative conversation design and basic fronte
 
 ## Starting / Running the App
 
-To start the app, go to your terminal make sure you have node installed on your device: 
+To start the app, go to your terminal make sure you have node installed on your device: [Download node](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 Once node is installed, install the app by running the following command in your terminal:
 ```npm install ```
@@ -65,19 +65,19 @@ Missing details in lost or damaged reports trigger follow-up prompts.
 
 ## Screenshots / Examples
 
-Initial Chat
+**Initial Chat**
 ![Initial Chat](src/readme_img/initialChat.png)
 
-Tracking a Package
+**Tracking a Package**
 ![Tracking a Package](src/readme_img/trackingPackage.png)
 
-Reporting a Lost Package
+**Reporting a Lost Package**
 ![Reporting a Lost Package](src/readme_img/lostPackage.png)
 
-Reporting a Damaged Package
+**Reporting a Damaged Package**
 ![Reporting a Damaged Package](src/readme_img/damagedPackage.png)
 
-Confirmation and Exit
+**Confirmation and Exit**
 ![Confirmation and Exit](src/readme_img/confirmationExit.png)
 
 
