@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# Tracky ChatBot
+## Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Tracky ChatBot is a simple customer service chatbot built in React.js that helps users track their packages, report lost or damaged items, and receive guidance on next steps. The chatbot demonstrates a clear conversation flow with error handling, suggested responses, and interactive decision-making.
 
-## Available Scripts
+This project is a demonstration of creative conversation design and basic frontend implementation using React.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Starting / Running the App
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To start the app, go to your terminal make sure you have node installed on your device: 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Once node is installed, install the app by running the following command in your terminal:
+```npm install ```
 
-### `npm test`
+Run the app locally run: 
+```npm start```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This will start the development server and open the chatbot in your default browser at http://localhost:3000.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To stop the server Press ```Ctrl + C``` in the terminal 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Approach
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Conversation Flow
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The chatbot uses a step-based approach to track conversation progress.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Steps include tracking a package, confirming package delivery, reporting lost or damaged packages, and collecting necessary details such as email or description.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Suggested responses are dynamically displayed to guide the user and reduce errors.
 
-## Learn More
+2. User Input Handling
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Text input is validated at certain steps (e.g., email format).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The chatbot handles unexpected inputs with polite fallback messages.
 
-### Code Splitting
+3. State Management
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+React useState is used to manage user input, chatbot messages, current step, and auxiliary data (damage description, tracking numbers, etc.).
 
-### Analyzing the Bundle Size
+useEffect ensures the chat scrolls automatically as new messages are added.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. Creativity
 
-### Making a Progressive Web App
+The chatbot simulates empathy and human-like responses.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Includes dynamic tracking number generation and support for multiple conversation paths.
 
-### Advanced Configuration
+Provides guided suggestions for faster interactions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+5. Error Handling
 
-### Deployment
+Invalid tracking numbers prompt email lookup.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Missing details in lost or damaged reports trigger follow-up prompts.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Screenshots / Examples
+
+Initial Chat
+(src/readme_img/initialChat.png)
+
+Tracking a Package
+(src/readme_img/trackingPackage.png)
+
+Reporting a Lost Package
+(src/readme_img/lostPackage.png)
+
+Reporting a Damaged Package
+(src/readme_img/damagedPackage.png)
+
+Confirmation and Exit
+(src/readme_img/confirmationExit.png)
+
+
+---
+
+## Notes
+
+The chatbot is built entirely in React.js and does not require a backend for demonstration purposes.
+
+This implementation can easily be extended to integrate with real tracking APIs or backend services for production use.
+
+Styling is handled via App.css and can be customized to match branding requirements.
+
+
+
