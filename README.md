@@ -92,4 +92,10 @@ This implementation can easily be extended to integrate with real tracking APIs 
 Styling is handled via App.css and can be customized to match branding requirements.
 
 
+---
+
+## Conversation Flow Diagram
+
+![Conversation Flow Diagram](src/readme_img/chatbot_decision_tree.png)
+
 
