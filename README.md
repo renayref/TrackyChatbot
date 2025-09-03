@@ -11,7 +11,9 @@ This project is a demonstration of creative conversation design and basic fronte
 
 To start the app, go to your terminal make sure you have node installed on your device: [Download node](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
-Once node is installed, install the app by running the following command in your terminal:
+Once node is installed, clone the repo and in your terminal, navigate the the project folder.
+
+Install the app by running the following command in your terminal:
 ```npm install ```
 
 Run the app locally run: 
